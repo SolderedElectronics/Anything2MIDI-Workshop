@@ -1,26 +1,45 @@
+const int buttonPin = 0;
+const unsigned long debounceDelay = 50; // milliseconds
 
-#include <RBD_Timer.h>  // https://github.com/alextaujenis/RBD_Timer
-#include <RBD_Button.h> // https://github.com/alextaujenis/RBD_Button
+bool buttonState = HIGH;     // current stable state
+bool lastButtonState = HIGH; // previous stable state
+unsigned long lastDebounceTime = 0;
 
-// Create button
-RBD::Button button(0);
-
-void setup() 
+void setup()
 {
+  pinMode(buttonPin, INPUT_PULLUP);
   Serial.begin(115200);
 }
 
-void loop() 
+void loop()
 {
-  if(button.onPressed()) 
+  int reading = digitalRead(buttonPin);
+
+  // If the reading changed, reset debounce timer
+  if (reading != lastButtonState)
   {
-    noteOn(0x90, 60, 100);
+    lastDebounceTime = millis();
   }
 
-  if(button.onReleased()) 
+  // If the reading has been stable for long enough, accept it
+  if ((millis() - lastDebounceTime) > debounceDelay)
   {
-    noteOff(0x80, 60);
+    if (reading != buttonState)
+    {
+      buttonState = reading;
+
+      if (buttonState == LOW)
+      { // Button pressed
+        noteOn(0x90, 60, 100);
+      }
+      else
+      { // Button released
+        noteOff(0x80, 60);
+      }
+    }
   }
+
+  lastButtonState = reading;
 }
 
 void noteOn(int cmd, int pitch, int velocity)
