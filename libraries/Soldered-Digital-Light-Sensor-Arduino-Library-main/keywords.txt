@@ -1,0 +1,31 @@
+##################################################
+# Syntax Coloring Map For LTR-507-Light-And-Proximity-Sensor-SOLDERED
+##################################################
+
+##################################################
+# Datatypes (KEYWORD1)
+##################################################
+
+LTR507	KEYWORD1
+
+##################################################
+# Methods and Functions (KEYWORD2)
+##################################################
+
+init	KEYWORD2
+setPSMode	KEYWORD2
+setALSMode	KEYWORD2
+setLEDPulseFreq	KEYWORD2
+setLEDDutyCycle	KEYWORD2
+setPSMeasRate	KEYWORD2
+setLEDPeakCurrent	KEYWORD2
+setPSNumPulses	KEYWORD2
+setALSGain	KEYWORD2
+setALSBitWidth	KEYWORD2
+setALSMeasRate	KEYWORD2
+getLightIntensity	KEYWORD2
+getProximity	KEYWORD2
+
+##################################################
+# Constants (LITERAL1)
+##################################################

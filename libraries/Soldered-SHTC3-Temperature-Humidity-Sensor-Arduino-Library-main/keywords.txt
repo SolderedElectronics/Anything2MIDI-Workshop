@@ -1,0 +1,25 @@
+##################################################
+# Syntax Coloring Map For SHTC3-SOLDERED
+##################################################
+
+##################################################
+# Datatypes (KEYWORD1)
+##################################################
+SHTC3               KEYWORD1
+##################################################
+# Methods and Functions (KEYWORD2)
+##################################################
+
+begin	            KEYWORD2
+readTemperature     KEYWORD2
+readHumidity        KEYWORD2
+softwareReset       KEYWORD2
+readId              KEYWORD2
+wakeUp              KEYWORD2
+sendCommand         KEYWORD2
+readData            KEYWORD2
+powerDown           KEYWORD2
+##################################################
+# Constants (LITERAL1)
+##################################################
+
