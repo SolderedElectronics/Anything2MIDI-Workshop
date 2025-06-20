@@ -17,7 +17,7 @@ To participate in this workshop, it's mandatory to bring the following
   Download from [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software). Required for uploading code to your Arduino/Dasduino board.
 
 * **Board Definitions:**
-  [Dasduino Board Definitions for Arduino IDE](https://github.com/SolderedElectronics/Dasduino-Board-Definitions-for-Arduino-IDE/raw/master/package_Dasduino_Boards_index.json), install `Dasduino CONNECT` board.
+  [Dasduino Board Definitions for Arduino IDE](https://soldered.com/documentation/arduino/quick-start-guide/#2-install-dasduino-board-definitions), install `Dasduino CONNECT` board.
 
 * **Synthesizer (All Platforms):**
   [Surge XT Synthesizer](https://surge-synthesizer.github.io/) (or any other DAW/Synth that accepts MIDI input)
