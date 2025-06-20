@@ -30,7 +30,7 @@ To participate in this workshop, it's mandatory to bring the following
 
 #### 🍎 Required Software (macOS):
 
-* **Hairless MIDI Serial Bridge:** [projectgus.github.io/hairless-midiserial](https://projectgus.github.io/hairless-midiserial/), for Serial-to-MIDI bridging
+* **Hairless MIDI Serial Bridge:** [projectgus.github.io/hairless-midiserial](https://github.com/ezequielabregu/hairless-midiserial-Qt5/releases/tag/hairless-midiserial), for Serial-to-MIDI bridging
 * **Audio MIDI Setup** (built-in, use **IAC Driver** to create virtual MIDI ports)
 
 #### 🐧 Required Software (Linux):
